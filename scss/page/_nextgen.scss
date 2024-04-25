@@ -1,0 +1,25 @@
+@use '../abstract' as *;
+@use '../component' as *;
+
+.banner--nextgen {
+    background-image: url('../../images/nextgen/banner-nextgen-sm.jpg');
+    @include mediaQuery {
+        background-image: url('../../images/nextgen/banner-nextgen.jpg');
+    }
+}
+
+.nextgen {
+    h3 {
+        font-size: clamp(3rem, 6vw, 5rem);
+        font-family: "Speedee-bold";
+    }
+
+    h4 {
+        font-size: clamp(2rem, 6vw, 3rem);
+     
+    }
+
+    iframe {
+        aspect-ratio:  16 / 9;
+    }
+}
